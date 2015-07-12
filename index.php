@@ -1,18 +1,26 @@
 <!doctype html>
 <html>
 	<head>
-		<meta charset="UTF-8">
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, maximum-scale=1"/>
+		<link rel="icon" type="image/png" href="ico.png" />
 		<title>Configuration Page</title>
 	</head>
 	<style>
-body {background-color:#404040;}
+body {
+	background-color:#404040;
+	max-width: 900px;
+  margin: auto;
+  min-width: 320px;
+}
 h1   {color:#282828}
 h3   {color:white; text-decoration:underline;}
 p    {color:white; display:inline}
+
 </style>
 	<h1>Configuration Page of AP script</h1>
 	<body>
-
+<p> Your IP Address is: <? echo $_SERVER["REMOTE_ADDR"]; ?> </p> <br>
 
 <!-- Parameters user can change -->
 <form action="show.php" method="post">
@@ -37,7 +45,7 @@ p    {color:white; display:inline}
 
 
 
-	<input type="submit" value="Submit">
+<div style="margin: 0 500;">	<input type="submit" value="Submit"> </div>
 <!--/end/ Parameters user can change -->
 
 </form>
